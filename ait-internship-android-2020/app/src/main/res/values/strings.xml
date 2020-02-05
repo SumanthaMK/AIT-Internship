@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Internship</string>
+    <string name="student_name_label">Student Name</string>
+    <string name="ait_android_internship">AIT Android Internship</string>
+    <string name="usernamehint">Enter Username</string>
+    <string name="passwordhint">Enter Password</string>
+
+    <string-array name="section">
+        <item>Select Section</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+    </string-array>
+
+    <string-array name="Branch">
+        <item>Select Branch</item>
+        <item>CSE</item>
+        <item>ISE</item>
+        <item>ECE</item>
+        <item>Mech</item>
+    </string-array>
+
+</resources>

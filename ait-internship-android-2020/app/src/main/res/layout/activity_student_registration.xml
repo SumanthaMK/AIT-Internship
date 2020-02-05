@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivRegLogo"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="55dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/computer" />
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="30dp" />
+
+
+            <EditText
+                android:id="@+id/nameET"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_rect"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="10dp"
+                android:hint="Student Name"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/md_white_1000"
+                android:textColorHint="@color/md_white_1000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/usnET"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_rect"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="10dp"
+                android:hint="USN"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/md_white_1000"
+                android:textColorHint="@color/md_white_1000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/branchET"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_rect"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="10dp"
+                android:hint="Branch"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/md_white_1000"
+                android:textColorHint="@color/md_white_1000"
+                android:textSize="15sp" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/branchSpn"
+                android:entries="@array/Branch"
+                android:background="@drawable/rounded_rect">
+            </Spinner>
+
+            <EditText
+                android:id="@+id/sectionET"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_rect"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="10dp"
+                android:hint="Section"
+                android:maxLength="1"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/md_white_1000"
+                android:textColorHint="@color/md_white_1000"
+                android:textSize="15sp" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/sectionSpn"
+                android:entries="@array/section"
+                android:background="@drawable/rounded_rect">
+            </Spinner>
+
+            <EditText
+                android:id="@+id/mobileET"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_rect"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="10dp"
+                android:hint="Mobile Number"
+                android:inputType="phone"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/md_white_1000"
+                android:textColorHint="@color/md_white_1000"
+                android:textSize="15sp" />
+            <EditText
+                android:id="@+id/lots"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_rect"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="10dp"
+                android:hint="Lattitude"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/md_white_1000"
+                android:textColorHint="@color/md_white_1000"
+                android:textSize="15sp" />
+            <EditText
+                android:id="@+id/longs"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_rect"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="10dp"
+                android:hint="Longitude"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/md_white_1000"
+                android:textColorHint="@color/md_white_1000"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="My Location:  "
+                    android:textSize="20dp"
+                    android:textColor="@color/md_white_1000">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="My Location"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="20dp"
+                    android:id="@+id/langit">
+                </TextView>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/shareBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/md_blue_800"
+                android:text="Share"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/registerBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/md_blue_800"
+                android:text="Register"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/speakBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/md_blue_800"
+                android:text="Speak"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/videoCapture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/md_blue_800"
+                android:text="Video Capture"
+                android:textColor="#FFFFFF" />
+            <Button
+                android:id="@+id/stopaudio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/md_blue_800"
+                android:text="Stop"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/playmusic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/md_blue_800"
+                android:text="Play Music"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
